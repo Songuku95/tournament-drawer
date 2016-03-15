@@ -1,0 +1,23 @@
+.tournament-wrapper {
+  width: 100%;
+}
+
+.bracket-column {
+  float: left;
+  width: 15%;
+  position: relative;
+}
+
+.bracket-game {
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  .cell {
+    position: relative;
+    height: 30px;
+
+    .score {
+      float: right !important;
+    }
+  }
+}

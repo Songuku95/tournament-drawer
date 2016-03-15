@@ -1,0 +1,15 @@
+{
+  "name": "tournament-drawer",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node-sass css/tournament.scss build/tournament.css"
+  },
+  "author": "hgminh95 <hgminh95@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^3.4.2"
+  }
+}
