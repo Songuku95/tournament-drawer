@@ -6,7 +6,7 @@ tournament: {
         player, ...
     ]
 
-    group: [
+    groups: [
         {
             title: "Semi-final",
             matches: [
@@ -31,6 +31,9 @@ tournament: {
 ```
 
 ##Functions
+
+- addGroup(title)
+- getGroup(group_index)
 
 - addMatch(group_index, match)
 - removeMatch(match_id)

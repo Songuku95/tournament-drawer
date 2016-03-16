@@ -3,11 +3,18 @@
 module.exports = class Tournament {
 
   constructor() {
-
+    this.participants = []
+    this.groups = []
   }
 
-  getMatch(, ) {
+  addGroup(title) {
+    this.groups.push({
+      title: title
+    });
+  }
 
+  removeGroup(index) {
+    this.groups.splice(index, 1);
   }
 
   get html() {
