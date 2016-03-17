@@ -1,23 +1,72 @@
+$bracket-column-width: 15%;
+$bracket-heading-height: 30px;
+$bracket-cell-height: 30px;
+$bracket-game-margin: 20px;
+
 .tournament-wrapper {
   width: 100%;
 }
 
 .bracket-column {
   float: left;
-  width: 15%;
+  width: $bracket-column-width;
   position: relative;
+
+  .bracket-header {
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    border: 1px solid #000;
+    height: $bracket-heading-height;
+    line-height: $bracket-heading-height;
+    text-align: center;
+    vertical-align: middle;
+  }
+}
+
+.bracket-gap {
+  float: left;
+  width: 20px;
+  position: relative;
+
+  div {
+    float: left;
+    width: 10px;
+  }
+
+  .top-right {
+    border-top: 1px solid #000;
+    border-right: 1px solid #000;
+  }
+
+  .bottom {
+    border-bottom: 1px solid #000;
+  }
+
+  .bottom-right {
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+  }
 }
 
 .bracket-game {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: $bracket-game-margin;
+  margin-bottom: $bracket-game-margin;
 
   .cell {
     position: relative;
-    height: 30px;
+    height: $bracket-cell-height;
+    border: 1px solid #000;
+    vertical-align: middle;
+    line-height: $bracket-cell-height;
+    padding-left: 10px;
+    padding-right: 10px;
 
     .score {
       float: right !important;
+    }
+
+    &:hover {
+      border-color: #991;
     }
   }
 }
