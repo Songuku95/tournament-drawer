@@ -3,8 +3,8 @@
 module.exports = class Tournament {
 
   constructor() {
-    this.participants = []
-    this.groups = []
+    this.participants = [];
+    this.groups = [];
   }
 
   addGroup(title) {
@@ -14,11 +14,19 @@ module.exports = class Tournament {
   }
 
   removeGroup(index) {
-    this.groups.splice(index, 1);
+    if (typeof index != "number")
+      this.groups = this.groups.filter(e => e.title == index);
+    else
+      this.groups.splice(index, 1);
   }
 
   get html() {
     return "";
+  }
+
+  clear() {
+    this.participants = [];
+    this.groups = [];
   }
 
 }

@@ -4,12 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha",
     "build": "node-sass css/tournament.scss build/tournament.css"
   },
   "author": "hgminh95 <hgminh95@gmail.com",
   "license": "ISC",
   "devDependencies": {
+    "mocha": "^2.4.5",
     "node-sass": "^3.4.2"
   }
 }
